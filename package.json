@@ -1,0 +1,25 @@
+{
+  "name": "thef2e2019",
+  "version": "1.0.0",
+  "description": "f2e challenge 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iownthegame/thef2e2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iownthegame/thef2e2019/issues"
+  },
+  "homepage": "https://github.com/iownthegame/thef2e2019#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {}
+}
