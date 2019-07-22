@@ -1,2 +1,124 @@
 body {
-  background: green; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif; }
+  body .container {
+    width: 1280px;
+    height: 800px;
+    position: relative;
+    border: 1px solid #ccc; }
+  body div.menu-right {
+    background: #D85C56;
+    color: white;
+    border-radius: 0 0 0 30px;
+    width: 376px;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around; }
+    body div.menu-right i {
+      cursor: pointer; }
+  body .add-mission {
+    margin-top: 46px;
+    width: 564px;
+    height: 78px;
+    border: 1px solid #D85C56;
+    border-radius: 0 10px 10px 0;
+    color: #D85C56;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box; }
+    body .add-mission input.text {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      font-size: 30px;
+      width: 486px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      height: 100%;
+      color: #D85C56;
+      padding-left: 41px; }
+      body .add-mission input.text::placeholder {
+        color: #D85C56; }
+      body .add-mission input.text:focus {
+        outline: none; }
+    body .add-mission .btn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      width: 78px;
+      border-left: 1px solid #D85C56;
+      cursor: pointer; }
+  body .clock-layer {
+    margin-top: 34px;
+    display: inline-block; }
+  body .clock {
+    display: inline-block;
+    margin-top: 42px;
+    margin-left: 53.29px;
+    width: 576.13px;
+    height: 531.17px; }
+    body .clock img {
+      width: 100%;
+      height: 100%; }
+  body .tasks {
+    width: 563.82px;
+    display: inline-block;
+    vertical-align: top; }
+    body .tasks .task {
+      width: 100%;
+      height: 144px;
+      margin-bottom: 10px;
+      background: #EBEBEB;
+      border: 1px solid #EBEBEB;
+      border-radius: 0px 20px 20px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body .tasks .task.ing {
+        background: #D85C56; }
+        body .tasks .task.ing .play {
+          color: #D85C56; }
+        body .tasks .task.ing .content {
+          color: white;
+          display: flex;
+          flex-direction: column; }
+          body .tasks .task.ing .content .tomatoes {
+            margin-top: 12.93px; }
+            body .tasks .task.ing .content .tomatoes .tomato {
+              display: inline-block;
+              height: 37.27px;
+              width: 40.67px;
+              background: white;
+              border-radius: 50%; }
+      body .tasks .task .content {
+        padding-left: 41px;
+        display: flex;
+        align-items: flex-start;
+        justify-items: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #9A9A9A; }
+      body .tasks .task .play {
+        width: 87.03px;
+        height: 87.03px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        color: #9A9A9A; }

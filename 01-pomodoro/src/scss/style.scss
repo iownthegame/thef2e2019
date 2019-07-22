@@ -1,3 +1,167 @@
+$red-color: #D85C56;
+@mixin placeholder {
+  ::placeholder               {@content}
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
 body {
-  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  .container {
+    width: 1280px;
+    height: 800px;
+    // background: black;
+    position: relative;
+    border: 1px solid #ccc;
+  }
+
+  div.menu-right {
+    background: $red-color;
+    color: white;
+    border-radius: 0 0 0 30px;
+    width: 376px;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    i {
+      cursor: pointer;
+    }
+  }
+
+  .add-mission {
+    margin-top: 46px;
+    width: 564px;
+    height: 78px;
+    border: 1px solid $red-color;
+    border-radius: 0 10px 10px 0;
+    color: $red-color;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    input.text {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      font-size: 30px;
+      width: 486px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      height: 100%;
+      color: $red-color;
+      padding-left: 41px;
+
+      &::placeholder {
+        color: $red-color;
+      }
+      &:focus {
+        outline: none;
+      }
+
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      width: 78px;
+      border-left: 1px solid $red-color;
+      cursor: pointer;
+    }
+  }
+
+  .clock-layer {
+    margin-top: 34px;
+    display: inline-block;
+  }
+
+  .clock {
+    display: inline-block;
+    margin-top: 42px;
+    margin-left: 53.29px;
+    width: 576.13px;
+    height: 531.17px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .tasks {
+    width: 563.82px;
+    display: inline-block;
+    vertical-align: top;
+    .task {
+      width: 100%;
+      height: 144px;
+      margin-bottom: 10px;
+      background: #EBEBEB;
+      border: 1px solid #EBEBEB;
+      border-radius: 0px 20px 20px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.ing {
+        background: $red-color;
+        .play {
+          color: $red-color;
+        }
+        .content {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          .tomatoes {
+            margin-top: 12.93px;
+            .tomato {
+              display: inline-block;
+              height: 37.27px;
+              width: 40.67px;
+              background: white;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+
+      .content {
+        padding-left: 41px;
+        display: flex;
+        align-items: flex-start;
+        justify-items: center;
+        // width: 444.79px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #9A9A9A;
+      }
+
+      .play {
+        width: 87.03px;
+        height: 87.03px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        color: #9A9A9A;
+      }
+    }
+  }
 }
